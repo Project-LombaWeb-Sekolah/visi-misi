@@ -1,0 +1,114 @@
+$lightBlue: royalblue;
+$darkBlue: rgb(28, 51, 121);
+$lightRed: red;
+$darkRed: rgb(117, 23, 23);
+
+* {
+  padding: 0;
+  margin: 0;
+  body {
+    overflow-x: hidden;
+    .judul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 60%;
+      margin: auto;
+      img {
+        width: 10%;
+        margin-left: -150px;
+      }
+      h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 70pxc;
+      }
+    }
+    .cardWrapper {
+      .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        position: relative;
+        flex-wrap: wrap;
+        width: 700px;
+        height: 200px;
+        background: white;
+        box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+
+        border-radius: 30px;
+        p {
+          max-width: 80%;
+          text-align: justify;
+          margin-top: 50px;
+        }
+        .red {
+          background: $lightRed;
+          &::after {
+            background: $lightRed;
+          }
+          &::before {
+            background: $darkRed;
+          }
+        }
+        span {
+          position: absolute;
+          top: 30px;
+          left: -15px;
+          width: 200px;
+          height: 40px;
+          background: $lightBlue;
+          border-radius: 30px;
+          border-bottom-left-radius: 0;
+          h1 {
+            position: absolute;
+            color: white;
+            top: 2px;
+            left: 20px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 40px;
+            width: 15px;
+            height: 30px;
+            background: $darkBlue;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            z-index: 2;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            width: 15px;
+            height: 15px;
+            background: $lightBlue;
+          }
+        }
+      }
+    }
+    .moto {
+      display: block;
+      text-align: center;
+      max-width: 30%;
+      margin: auto;
+
+      h1 {
+        font-size: 35px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 20px;
+        align-items: center;
+        line-height: 50px;
+      }
+      hr {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        margin: 30px auto;
+      }
+    }
+  }
+}

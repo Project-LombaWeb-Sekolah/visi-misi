@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  overflow-x: hidden;
+}
+
+* body .judul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 60%;
+  margin: auto;
+}
+
+* body .judul img {
+  width: 10%;
+  margin-left: -150px;
+}
+
+* body .judul h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+* body .cardWrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px auto;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 700px;
+  height: 200px;
+  background: white;
+  -webkit-box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+* body .cardWrapper .card p {
+  max-width: 80%;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+* body .cardWrapper .card .red {
+  background: red;
+}
+
+* body .cardWrapper .card .red::after {
+  background: red;
+}
+
+* body .cardWrapper .card .red::before {
+  background: #751717;
+}
+
+* body .cardWrapper .card span {
+  position: absolute;
+  top: 30px;
+  left: -15px;
+  width: 200px;
+  height: 40px;
+  background: royalblue;
+  border-radius: 30px;
+  border-bottom-left-radius: 0;
+}
+
+* body .cardWrapper .card span h1 {
+  position: absolute;
+  color: white;
+  top: 2px;
+  left: 20px;
+}
+
+* body .cardWrapper .card span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 15px;
+  height: 30px;
+  background: #1c3379;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+
+* body .cardWrapper .card span::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 15px;
+  height: 15px;
+  background: royalblue;
+}
+
+* body .moto {
+  display: block;
+  text-align: center;
+  max-width: 30%;
+  margin: auto;
+}
+
+* body .moto h1 {
+  font-size: 35px;
+}
+
+* body .moto p {
+  margin-top: 20px;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 50px;
+}
+
+* body .moto hr {
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  margin: 30px auto;
+}
+/*# sourceMappingURL=index.css.map */
