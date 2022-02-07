@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* body {
+  overflow-x: hidden;
+}
+
+* body .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 60px auto;
+  width: 80%;
+}
+
+* body .card .elbow {
+  position: absolute;
+  top: 15px;
+  left: 250px;
+}
+
+* body .card .elbow img {
+  width: 70%;
+}
+
+* body .card .line1 {
+  width: 300px;
+  height: 400px;
+  background: #e3e2e2;
+  -webkit-box-shadow: 25px 26px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 25px 26px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+}
+
+* body .card .line1 img {
+  width: 70%;
+  border-radius: 7px;
+  margin: 40px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* body .card .line1 p {
+  text-align: justify;
+  max-width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+* body .elbow2 {
+  position: absolute;
+  bottom: 120px;
+  right: 220px;
+}
+
+* body .personRpl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 120px auto;
+  max-width: 80%;
+}
+
+* body .personRpl img {
+  width: 20%;
+  margin-bottom: 80px;
+}
+
+* body .personRpl p {
+  max-width: 80%;
+  padding: 20px 0;
+  text-align: justify;
+  border-bottom: 2px solid black;
+}
+
+* body .judulGuru {
+  max-width: 15%;
+  padding: 20px 0;
+  margin: -120px auto;
+  text-align: center;
+  border-bottom: 3px solid #aeaeae;
+}
+
+* body .profilGuru {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 190px auto;
+  width: 90%;
+}
+
+* body .profilGuru .fotoProfil img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+* body .profilGuru .fotoProfil img.line {
+  width: 12px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+* body .profilGuru .fotoProfil p {
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+}
+
+* body .rplWork {
+  position: absolute;
+  top: 1252px;
+  width: 792px;
+  height: 792px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+/*# sourceMappingURL=part2.css.map */
