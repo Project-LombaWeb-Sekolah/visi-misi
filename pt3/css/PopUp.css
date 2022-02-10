@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: royalblue;
+  min-height: 100vh;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.popUpContent {
+  position: relative;
+  width: 720px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.popUpContent .imgPopUP {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUpContent .imgPopUP img {
+  position: relative;
+  max-width: 350px;
+}
+
+.popUpContent .hutWord {
+  position: relative;
+  width: 370px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: azure;
+}
+
+.popUpContent .hutWord .fullWord {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+}
+
+.popUpContent .hutWord .fullWord h3 {
+  line-height: 40px;
+  font-weight: 300;
+  font-size: 2em;
+}
+.popUpContent .hutWord .fullWord h2 {
+  font-size: 4em;
+  text-align: center;
+  color: #ff4d54;
+  line-height: 120px;
+}
+.popUpContent .hutWord .fullWord h2 span {
+  color: black;
+  font-size: 50px;
+}
+
+.popUpContent .hutWord .fullWord p {
+  text-align: justify;
+  font-weight: 300;
+}
+
+.popUpContent .hutWord .fullWord a {
+  line-height: 70px;
+  text-decoration: none;
+  background: royalblue;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: white url(../../Icon/close.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  z-index: 2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .popUpContent {
+    transform: translateY(-60px);
+    width: 370px;
+    height: 400px;
+    flex-direction: column;
+  }
+  .imgPopUP img {
+    height: 200px;
+    margin-top: 40px;
+    transform: translateY(-50px);
+  }
+  .popUpContent .hutWord {
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+    padding-top: 0;
+    line-height: 20px;
+  }
+}
